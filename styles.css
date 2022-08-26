@@ -1,0 +1,872 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding:0;
+    margin: 0;
+    max-width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+    /* overflow-x:auto; */
+}
+header{
+    background-color: #000;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 0;
+}
+.nav_logo{
+    font-size: 2rem;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.nav_logo:hover{
+    color: #92A45B;
+    transition: .9s ease-in-out;
+}
+
+.nav_links:hover{
+    color: black;
+    transition: 0 9s ease-in-out;
+}
+.nav_menu{
+    position: fixed;
+    top: 50px;
+    left: -100%;
+    flex-direction: column;
+    background-color: rgb(207, 200, 200);
+    width: 100%;
+    text-align: center;
+    transition: .3s;
+    padding-inline-start: 0;
+}
+.nav_menu.active{
+    left: 0;
+}
+.nav_items{
+    list-style: none;
+    margin: 10px 0;
+    padding:10px;
+    width: 100%;
+}
+.nav_items:hover{
+    background-color: rgb(101, 207, 101);
+}
+.nav_links{
+    display: block;
+    color: black;
+    text-decoration: none;
+    transition: .7s ease;
+    font-size: 1.1rem;
+}
+.hamburger{
+    display: block;
+    margin-right: 10px;
+}
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background-color: white;
+}
+
+/*BODY*/
+#section1{
+    height: 40%;
+    margin: 0;
+    padding: 50px;
+    background-color: #333;
+}
+.carousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.carousel h2{
+    margin: 0;
+    color: white;
+    /* font-size: 1.5rem; */
+    font-weight: 500px;
+font-size: 20px;
+line-height: 24px;
+
+color: #FFFFFF;
+}
+.carousel p{
+    text-align: center;
+    color: white;
+    line-height: 22px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+.carousel hr{
+    width: 15%;
+}
+.getStarted{
+    padding: 7px 15px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+h3 .competencies{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+hr.new1{
+    width: 50px;
+    max-width: 100px;
+    margin: 0px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #4C572A;
+    margin: 1em 0;
+    padding: 0;
+}
+hr{
+    
+}
+#section2 h3{
+    padding-left: 10px;
+    color: #92A45B;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.part1, .part3{
+    align-items: center;
+    height: 35%;
+    padding: 20px;
+    background: #E9F1D1;
+    border-radius: 4px;
+}
+.part1 h4{
+    margin: 0;
+}
+
+#section2 p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.part1LearnMore, .part3LearnMore{
+    padding: 5px;
+    color: white; 
+    border: 0;
+    background: #92A45B;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}
+/* .part1LearnMore:hover{
+    background-color: transparent;
+    border: 1px solid white;
+
+} */
+.btn{
+    text-align: right;
+}
+.part2, .part4{
+    align-items: center;
+    height: 35%;
+    padding: 20px;
+    background: #F2FFF9;
+    border-radius: 4px;
+}
+.part2 h4{
+    margin: 0 ;
+}
+
+.part2LearnMore, .part4LearnMore{
+    padding: 5px;
+    color: white;
+    border: 0;
+    background: #46959F;
+    border-radius: 2px;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+
+}
+/* .part2LearnMore:hover{
+    background-color: transparent;
+    border: 1px solid white;
+
+} */
+                        
+.part3 h4{
+    margin: 0;
+}
+
+/* .part3LearnMore:hover{
+    background-color: transparent;
+    border: 1px solid white;
+
+} */
+.btn{
+    text-align: right;
+}
+
+
+.part4 h4{
+    margin: 0;
+}
+
+/* .part4LearnMore:hover{
+    background-color: transparent;
+    border: 1px solid white;
+
+} */
+#section3{
+    padding: 10px 0 20px 0;
+    margin-top: 50px;
+    border-bottom-right-radius: 64px;
+    background: #E9F1D1;
+    border-radius: 64px 0px;
+}
+#section3 h3{
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+/* 4 */
+
+color: #4C572A;
+}
+#section3 p{
+color: #4C572A;
+
+}
+.categories{
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+}
+.categories button{
+    width: 120px;
+    height: 40px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: #4C572A;
+    border-radius: 2px;
+}
+.categories button.listings{
+    background-color: transparent;
+    color: #4C572A;
+    border: 1px solid #4C572A;
+}
+/* .categories button:hover{
+    border: 1px solid rgb(56, 82, 4);
+    background-color: transparent;
+    color: rgb(56, 82, 4)
+} */
+#section4{
+    padding: 20px;
+    line-height: 22px;
+    margin-top: none;
+}
+#section4 h3{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+#section4 p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.footerhead{
+    background-color: #FAFFEA;
+}
+.footerhead p{
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+}
+.social_icons{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+.fa-brands{
+    font-size: 20px;
+    
+}
+.footer_main{
+    background: #161B07;
+    color: white;
+}
+.footer_main .p{
+    text-align: center;
+    color: white;
+}
+.footer_logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer_roam{
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 38px;
+color: #FFFFFF;
+}
+.footer_consulting{
+    /* font-size: .8em; */
+    margin: 0;
+    padding: 0;
+    color: #8d9479;
+
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 200;
+font-size: 8.5px;
+line-height: 10px;
+
+color: #FFFFFF;
+}
+.footer_nav li{
+    list-style: none;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+}
+.footer_nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer_nav1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+.footer_nav2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 40px;
+    padding-top: 15px;
+}
+.headOffice p{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+}
+.headOffice h3{
+    margin-left: 70px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+}
+.branchOffice{
+    margin-left: 60%;
+}
+.branchOffice p{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    /* font-size: .8rem; */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+
+}
+.branchOffice h3{
+    margin-left: 40px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+}
+
+.fa-solid{
+    font-size: 17px;
+    margin-right: 15px;
+}
+.fa-house{
+    margin-top: 5px;
+}
+.fa-house1{
+    margin-top: 15px;
+}
+div .copy_sign{
+display: inline;
+}
+div .copy{
+    text-align: center;
+    padding: 30px;
+    font-size: .8rem;
+}
+
+/* ABOUT US PAGE */
+.aboutUs_main{
+    margin: 0 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.aboutUs h3{
+    font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+}
+.aboutUs li{
+    font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+}
+.aboutUs{
+    color: #92A45B;
+    font-size: 20px;
+    line-height: 24px;
+}
+.values{
+    /* background-color: #95cc68; */
+    padding: 10px;
+    background: #E9F1D1;
+    border-radius: 4px;
+}
+.motto{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+/* OUR SERVICES PAGE */
+.ourServices_main{
+    margin: 0 20px;
+}
+.ourServices{
+    color: #92A45B;
+    font-size: 20px;
+    line-height: 24px;
+}
+.roam_services{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+
+    /* /9 */
+
+color: #191919;
+}
+.learn{
+    padding: 5px;
+    text-align: right;
+    border: none;
+}
+.learn a{
+    text-decoration: none;
+    color: white;
+}
+.learn:hover{
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+}
+.service1{
+    padding: 10px;
+    background: #E9F1D1;
+    border-radius: 4px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+
+    /* /9 */
+
+color: #191919;
+
+}
+.outsourcing{
+background: #92A45B;
+border-radius: 2px;
+}
+.service2{
+    padding: 10px;
+    background: #F2FFF9;
+border-radius: 4px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.backgroundCheck{
+    background: #46959F;
+border-radius: 2px;
+}
+.service3{
+    padding: 10px;
+    background: #E9F1D1;
+    border-radius: 4px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+.advisory{
+background: #92A45B;
+border-radius: 2px;
+}
+.service4{
+    padding: 10px;
+    background: #F2FFF9;
+border-radius: 4px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.training{
+    background: #46959F;
+border-radius: 2px;
+}
+
+
+/* OUTSOURCING PAGE */
+
+.outsource1{
+    margin: 0 20px;
+}
+.outsource1 p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.whyOutsource, .whyOutsourceAdvisory{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+.hrOutsourcing{
+    line-height: 24px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #92A45B;
+}
+.functional_areas{
+    background: #E9F1D1;
+    padding: 10px;
+}
+.functional_areas h3{
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+.functional_areas li{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+.whyManagedStaffing{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+.managedStaffingWhys li{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+.havingMargin{
+    margin: 0 20px;
+}
+.freeConsultatiion{
+    padding: 5px;
+    border: none;
+    background: #92A45B;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    width: 225px;
+    text-align: center;
+}
+.freeConsultatiion a{
+    text-decoration: none;
+    color: #fff;
+}
+.btn_centered{
+    text-align: center;
+}
+.easy_steps{
+    text-align: center;
+    background-color:#b6df95;
+    padding: 10px;
+    margin-top: 10px;
+}
+.easy_steps h3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+.easy_steps p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+.recommended h3{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+.recommended p{
+    font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
+
+
+/* BACKGROUND CHECK PAGE */
+.hrBackgroundCheck{
+    color: #92A45B;
+    font-size: 20px;
+    line-height: 24px;
+}
+.advisory p, .training p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* HR TRAINING PAGE */
+
+.hrTraining{
+    color: #92A45B;
+}
+
+
+/* CONTACT US PAGE */
+.contactOffice{
+    background-color: #b0e78c;
+    padding: 1px;
+    border: 1px solid #92A45B;
+}
+.contactOffice hr{
+    width: 98%;
+    /* background-color: #92A45B; */
+}
+.contactOffice p{
+    display: flex;
+}
+.hrcontactUs{
+    color: #92A45B;
+    font-size: 20px;
+    line-height: 24px;
+}
+.main_form{
+    width: 400px;
+    /* margin: auto; */
+}
+form #contactUs{
+    margin: 40px;
+}
+label{
+    font-size: 18px;
+}
+input#name, select, textarea{
+    width: 300px;
+    border: 1px solid rgb(102, 93, 93);
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+}
+input#submit{
+    width: 100px;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    background-color: rgb(84, 121, 10);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* LATEST JOBS PAGE */
+.hrLatestJobs{
+    color: #92A45B;
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+}
+.job_view{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.job p{
+    line-height: 8px;
+}              
+                               
+.job_title{
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+}  
+.job_location{
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+}
+.time_posted{
+    font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+}
+button#view{
+    padding: 10px;
+        background: #92A45B;
+    border: none;
+    border-radius: 2px;
+}
+
+button a{
+    text-decoration: none;
+    color: white
+}
+button.moreJobs{
+    background: #92A45B;
+    border-radius: 2px;
+    border: 0;
+    padding: 10px;
+    color: white;
+
+}
+.view a{
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 17px;
+}
+.trendingJobs{
+    font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+    margin: 0 20px;
+    padding-top: 20px;
+}
+
+
+
+/* JOB SUMMARY PAGE */
+.jobSummary_title{
+    font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+}
+.jobSummary_location{
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+}
+.jobSummary_time_posted{
+    font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+}
+.jobSummary{
+    font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+}
+.jobSummary li, .how_to_apply{
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+}
+button.apply_for_job {
+    background: #92A45B;
+    border-radius: 2px;
+    border: 0;
+    padding: 10px;
+    color: white;
+}
+button.apply_for_job a{
+    font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+}
