@@ -13,7 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/style1.css" />
+    <link rel="stylesheet" href="styles/style2.css" />
     <script src="script.js" defer></script>
     <script
       src="https://kit.fontawesome.com/afeebe238c.js"
@@ -23,7 +24,10 @@
   <body>
     <header>
       <div class="navbar">
-        <a href="index.html" class="nav_logo">Roam</a>
+        <div class="search_icon">
+          <button>fa</button>
+        </div>
+        <a href="index.html" class="nav_logo">ROAM</a>
         <ul class="nav_menu">
           <li class="nav_items">
             <a href="index.html" class="nav_links">Home</a>
@@ -32,7 +36,7 @@
             <a href="aboutUs.html" class="nav_links">About</a>
           </li>
           <li class="nav_items">
-            <a href="ourServices.html" class="nav_links">Services +</a>
+            <a href="ourServices.html" class="nav_links">Services</a>
           </li>
           <li class="nav_items">
             <a href="contactUs.html" class="nav_links">Contact</a>
@@ -41,6 +45,9 @@
             <a href="latestJobs.html" class="nav_links">Latest Jobs</a>
           </li>
         </ul>
+        <div class="search_btn">
+          <button class="search">search</button>
+        </div>
         <div class="hamburger">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -49,8 +56,9 @@
       </div>
     </header>
 
-    <main>
+    <main class="advisory_page">
       <div class="havingMargin">
+        <hr class="long1">
         <h3 class="hradvisory">
           HR Advisory
           <hr class="new1"/>
@@ -87,8 +95,26 @@
       </div>
       <div class="easy_steps">
         <h3>Easy steps to work with us</h3>
+        <img
+          src="images/post_consultation1.png"
+          alt=""
+          width="100px"
+          height="100px"
+        />
         <p>Schedule a free consultation</p>
+        <img
+          src="images/post_consultation2.png"
+          alt=""
+          width="100px"
+          height="100px"
+        />
         <p>Get a call/mail from us</p>
+        <img
+          src="images/post_ consultation3.png"
+          alt=""
+          width="100px"
+          height="100px"
+        />
         <p>Watch your business grow</p>
       </div>
       <div class="havingMargin">
@@ -114,42 +140,50 @@
           <p class="footer_roam p">ROAM</p>
           <p class="footer_consulting p">CONSULTING</p>
         </div>
-        <ul class="footer_nav">
-          <div class="footer_nav1">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
+        <div class="footer_parts">
+          <ul class="footer_links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutUs.html">About</a></li>
+            <li><a href="ourServices.html">Services</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="latestJobs.html">Latest Jobs</a></li>
+          </ul>
+          <ul class="footer_nav">
+            <div class="footer_nav1">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutUs.html">About</a></li>
+              <li><a href="ourServices.html">Services</a></li>
+            </div>
+            <div class="footer_nav2">
+              <li><a href="contactUs.html">Contact Us</a></li>
+              <li><a href="latestJobs.html">Latest Jobs</a></li>
+            </div>
+          </ul>
+          <div class="headOffice">
+            <h3>Head Office</h3>
+            <p>
+              <i class="fa-solid fa-house"></i> 5 Turton Street, Obalende Lagos
+              State
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 08167890669, 08085596508</p>
+            <p>
+              <i class="fa-solid fa-envelope-circle-check"></i>
+              hr.roamconsulting@gmail.com
+            </p>
           </div>
-          <div class="footer_nav2">
-            <li><a href="">Contact Us</a></li>
-            <li><a href="">Latest Jobs</a></li>
+          <div class="branchOffice">
+            <h3>Branch Office</h3>
+            <p>
+              <i class="fa-solid fa-house fa-house1"></i> 143 Oba-Adolor Street,
+              Upper Sakponba Road, <br />
+              Benin City, Edo State
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 08167890669, 08085596508</p>
+            <p>
+              <i class="fa-solid fa-envelope-circle-check"></i>
+              hr.roamconsulting@gmail.com
+            </p>
           </div>
-        </ul>
-        <div class="headOffice">
-          <h3>Head Office</h3>
-          <p>
-            <i class="fa-solid fa-house"></i> 5 Turton Street, Obalende <br />
-            Lagos State
-          </p>
-          <p><i class="fa-solid fa-phone"></i> 08167890669, 08085596508</p>
-          <p>
-            <i class="fa-solid fa-envelope-circle-check"></i>
-            hr.roamconsulting@gmail.com
-          </p>
-        </div>
-        <div class="branchOffice">
-          <h3>Branch Office</h3>
-          <p>
-            <i class="fa-solid fa-house fa-house1"></i> 143 Oba-Adolor Street,
-            <br />
-            Upper Sakponba Road, <br />
-            Benin City, Edo State
-          </p>
-          <p><i class="fa-solid fa-phone"></i> 08167890669, 08085596508</p>
-          <p>
-            <i class="fa-solid fa-envelope-circle-check"></i>
-            hr.roamconsulting@gmail.com
-          </p>
         </div>
         <div class="copy">
           <div class="copy_sign">&#169;</div>
