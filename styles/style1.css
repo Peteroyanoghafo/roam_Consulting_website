@@ -89,14 +89,9 @@ header {
             border: 1px solid rgb(238, 224, 224);
         }
         #section1 {
-            
-            margin: 0 5%;
-            padding: 20vh;
-            height: 60vh;
-            background: url("../images/outsourcing.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
+            position: relative;
+            text-align: center;
+            color: #fff;
         }
     
         .carousel {
@@ -104,13 +99,15 @@ header {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     
         .carousel h2 {
             margin: 0;
             color: white;
-            /* font-size: 1.5rem; */
             font-weight: 800px;
             font-size: 40px;
             line-height: 24px;
@@ -216,8 +213,8 @@ header {
     
         #section2 p {
             font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 24px;
+            line-height: 40px;
         }
     
         .part1LearnMore,
