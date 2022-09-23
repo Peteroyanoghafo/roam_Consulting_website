@@ -1,4 +1,61 @@
 /* SMALL SCREENS */
+@media (max-width: 359px) {
+    .carousel h2 {
+            font-weight: 100px;
+            font-size: 8px;
+            line-height: 10px;
+            margin: 0;
+        }
+                  .carousel hr {
+                      margin: 0;
+                      padding: 0;
+                  }
+        .carousel p {
+            line-height: 22px;
+            font-weight: 80;
+            font-size: 5px;
+            line-height: 10px;
+            margin: 0;
+            text-align: justify; 
+        }
+    
+        .getStarted {
+            padding: 0;
+            margin: 0;
+            border-radius: 3px;
+            font-weight: 120;
+            font-size: 9px;
+            line-height: 10px;
+        }
+}
+@media (max-width: 545px) and (min-width: 360px) {
+.carousel h2 {
+        font-weight: 200px;
+        font-size: 12px;
+        line-height: 12px;
+        margin: 0;
+    }
+    .carousel hr{
+        margin: 0;
+        padding: 0;
+    }
+    .carousel p {
+        line-height: 22px;
+        font-weight: 150;
+        font-size: 9px;
+        line-height: 10px;
+        margin: 0;
+    }
+    
+    .getStarted {
+        padding: 3px 9px;
+        border-radius: 3px;
+        font-weight: 200;
+        font-size: 10px;
+        line-height: 17px;
+    }
+}
+
 @media (max-width: 768px) {
 *{
     box-sizing: border-box;
@@ -116,7 +173,7 @@ header {
 
 /*BODY*/
 #section1 {
-    height: 40%;
+    /* height: 50%;
     margin: 0;
     padding: 70px;
     background-color: #333;
@@ -124,7 +181,10 @@ header {
     background: url("../images/outsourcing.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: contain; */
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
 .carousel {
@@ -132,17 +192,19 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .carousel h2 {
-    margin: 0;
     color: white;
-    /* font-size: 1.5rem; */
     font-weight: 500px;
     font-size: 20px;
     line-height: 24px;
-
     color: #FFFFFF;
+    margin: 0;
 }
 
 .carousel p {
@@ -153,6 +215,7 @@ header {
     font-size: 12px;
     line-height: 20px;
     text-align: center;
+    margin: 0;
 }
 
 .carousel hr {
@@ -160,7 +223,7 @@ header {
 }
 
 .getStarted {
-    padding: 7px 15px;
+    padding: 5px 10px;
     border-radius: 5px;
     background-color: transparent;
     border: 1px solid white;
