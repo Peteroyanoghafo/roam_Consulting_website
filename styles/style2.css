@@ -1,10 +1,67 @@
 /* SMALL SCREENS */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 50px;
+    margin-bottom: 0;
+}
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel h2 {
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.carousel p {
+    text-align: center;
+    color: white;
+    line-height: 22px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.carousel hr {
+    width: 15%;
+}
+
+.getStarted {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
 @media (max-width: 359px) {
+  
+    .carousel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     .carousel h2 {
             font-weight: 100px;
-            font-size: 8px;
+            font-size: 18px;
             line-height: 10px;
             margin: 0;
+            padding: 20px 10px 10px 10px;
         }
                   .carousel hr {
                       margin: 0;
@@ -13,47 +70,83 @@
         .carousel p {
             line-height: 22px;
             font-weight: 80;
-            font-size: 5px;
-            line-height: 10px;
+            font-size: 10px;
+            line-height: 12px;
             margin: 0;
-            text-align: justify; 
+            text-align: center; 
+            padding: 10px;
         }
     
         .getStarted {
-            padding: 0;
+            padding: 3px 9px;
             margin: 0;
             border-radius: 3px;
-            font-weight: 120;
-            font-size: 9px;
+            font-weight: 100;
+            font-size: 14px;
             line-height: 10px;
+        }
+        .branchOffice {
+            margin-left: 38%;
+            margin-right: 5%;
+        }
+        .nav_logo {
+            font-size: 1.01rem;
+            margin: 0 20px;
+            text-decoration: none;
+            color: #fff;
+        }
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px;
+            margin-bottom: 0;
         }
 }
 @media (max-width: 545px) and (min-width: 360px) {
-.carousel h2 {
-        font-weight: 200px;
-        font-size: 12px;
-        line-height: 12px;
-        margin: 0;
-    }
+    
+    .carousel {
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start;
+            justify-content: center;
+        }
+    .carousel h2 {
+            font-weight: 100px;
+            font-size: 19px;
+            line-height: 10px;
+            margin: 0;
+            padding: 10px;
+        }
+    
+        .carousel hr {
+            margin: 0;
+            padding: 0;
+        }
+    
+        .carousel p {
+            line-height: 22px;
+            font-weight: 80;
+            font-size: 12px;
+            line-height: 15px;
+            margin: 0;
+            text-align: center;
+            padding: 10px;
+        }
     .carousel hr{
         margin: 0;
         padding: 0;
-    }
-    .carousel p {
-        line-height: 22px;
-        font-weight: 150;
-        font-size: 9px;
-        line-height: 10px;
-        margin: 0;
     }
     
     .getStarted {
         padding: 3px 9px;
         border-radius: 3px;
         font-weight: 200;
-        font-size: 10px;
+        font-size: 14px;
         line-height: 17px;
     }
+   
 }
 
 @media (max-width: 768px) {
@@ -98,14 +191,14 @@ header {
     .search_icon button{
         cursor: pointer;
     }
-.navbar {
+/* .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 10px 50px;
     margin-bottom: 0;
-}
+} */
     .nav_logo {
         font-size: 1.5rem;
         margin: 0 20px;
@@ -130,8 +223,7 @@ header {
 
 .nav_menu {
     position: fixed;
-    /* top: 50px; */
-    top: 45px;
+    top: 43px;
     left: -100%;
     flex-direction: column;
     background-color: rgb(207, 200, 200);
@@ -173,29 +265,31 @@ header {
 
 /*BODY*/
 #section1 {
-    /* height: 50%;
+    height: 50%;
     margin: 0;
-    padding: 70px;
+    padding-top: calc(40vw/1.5);
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: #333;
     height: 40vh;
     background: url("../images/outsourcing.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain; */
-    position: relative;
+    background-size: contain;
+    /* position: relative;
     text-align: center;
-    color: white;
+    color: white; */
+}
+.bg-img{
+    display: none;
 }
 
-.carousel {
+/* .carousel {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    
 }
 
 .carousel h2 {
@@ -218,10 +312,6 @@ header {
     margin: 0;
 }
 
-.carousel hr {
-    width: 15%;
-}
-
 .getStarted {
     padding: 5px 10px;
     border-radius: 5px;
@@ -232,6 +322,10 @@ header {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
+} */
+
+.carousel hr {
+    width: 15%;
 }
 
 h3 .competencies {
@@ -297,11 +391,11 @@ hr.new1 {
     cursor: pointer;
 }
 
-/* .part1LearnMore:hover{
+.part1LearnMore:hover{
     background-color: transparent;
     border: 1px solid white;
 
-} */
+}
 .btn {
     text-align: right;
 }

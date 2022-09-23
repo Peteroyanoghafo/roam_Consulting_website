@@ -6,6 +6,7 @@ hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 });
 
+
 var header = document.getElementsByClassName("nav_bar");
 for (var i = 0; i < nav_links.length; i++) {
     btns[i].addEventListener("click",function() {
